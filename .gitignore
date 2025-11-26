@@ -81,11 +81,11 @@ runs/detect/train/*.jpg
 # ==========================================
 # Modelos Pré-treinados (muito pesados)
 # ==========================================
-*.pt
-yolov8*.pt
+#*.pt
+#yolov8*.pt
 # runs
- !runs/detect/train/weights/best.pt
- !runs/detect/train/weights/last.pt
+# !runs/detect/train/weights/best.pt
+# !runs/detect/train/weights/last.pt
 
 # ==========================================
 # Arquivos do Sistema e OS
