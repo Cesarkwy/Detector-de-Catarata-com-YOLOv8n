@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['catarata', 'cornea', 'pupil']
+
+roboflow:
+  workspace: eye-sufeh
+  project: capsulorrexis-segmentation-xm4mw
+  version: 6
+  license: Public Domain
+  url: https://universe.roboflow.com/eye-sufeh/capsulorrexis-segmentation-xm4mw/dataset/6

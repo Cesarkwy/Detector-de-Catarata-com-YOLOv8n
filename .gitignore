@@ -1,0 +1,154 @@
+# ==========================================
+# Ambiente Virtual Python
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+.Python
+
+# ==========================================
+# Dependências do Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.eggs/
+
+# ==========================================
+# IDE e Editores
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+*.code-workspace
+
+# ==========================================
+# Arquivos de Saída de Vídeos e Métricas
+# ==========================================
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+video*_annot*.mp4
+video*_metrics*.csv
+
+# ==========================================
+# Diretórios de Debug e Anotações
+# ==========================================
+debug_*/
+debug_video*/
+test_output/
+temp/
+tmp/
+
+# ==========================================
+# Dados de Treinamento e Frames Extraídos
+# ==========================================
+data/frames/*/
+data/raw/*.mp4
+data/raw/*.avi
+data/raw/*.mov
+data/raw/*.mkv
+# Manter somente a estrutura do roboflow_dataset
+!data/roboflow_dataset/
+
+# ==========================================
+# Resultados de Treinamento YOLOv8
+# ==========================================
+runs/detect/train/train_batch*.jpg
+runs/detect/train/val_batch*.jpg
+runs/detect/train/*.png
+runs/detect/train/*.jpg
+# Manter arquivos importantes
+!runs/detect/train/weights/
+!runs/detect/train/args.yaml
+!runs/detect/train/results.csv
+
+# ==========================================
+# Modelos Pré-treinados (muito pesados)
+# ==========================================
+*.pt
+yolov8*.pt
+# runs
+ !runs/detect/train/weights/best.pt
+ !runs/detect/train/weights/last.pt
+
+# ==========================================
+# Arquivos do Sistema e OS
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.lnk
+
+# ==========================================
+# Cache e Arquivos Temporários
+# ==========================================
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+*.tmp
+*.bak
+*.backup
+*~
+
+# ==========================================
+# Notebooks Jupyter (se usar)
+# ==========================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ==========================================
+# Arquivos Específicos do Projeto
+# ==========================================
+# Excluir todos os CSVs de métricas gerados
+*_metrics*.csv
+*_metrics_debug.csv
+
+# Arquivos de configuração local
+config.local.json
+.env
+.env.local
+secrets.txt
+
+# ==========================================
+# Arquivos compilados e otimizados
+# ==========================================
+*.pyc
+*.pyo
+*.pyd
+.mypy_cache/
+.dmypy.json
+dmypy.json
+*.egg
+
+# ==========================================
+# Dados Sensíveis
+# ==========================================
+*.key
+*.pem
+*.p12
+credentials.json
+api_keys.txt
+
+*.exe
