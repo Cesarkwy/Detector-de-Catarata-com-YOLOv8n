@@ -40,10 +40,6 @@ torchvision>=0.10.0
 
 ### 1. Clonar/Preparar o Repositório
 
-```bash
-cd c:\Users\cesar\Desktop\PDI2
-```
-
 ### 2. Criar Ambiente Virtual (Recomendado)
 
 ```powershell
@@ -78,7 +74,7 @@ python -c "import cv2, numpy, torch, ultralytics; print(' Todas as dependências
 ### Estrutura de Diretórios Esperada
 
 ```
-PDI2/
+Projeto/
 ├── infer_video_yolov8_bbox.py    # Script principal de inferência
 ├── extract_frames.py              # Script para extrair frames
 ├── requirements.txt               # Dependências
